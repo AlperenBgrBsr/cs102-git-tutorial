@@ -15,7 +15,7 @@ public class Cipher
         // for all chars in the input string
         for (int i = 0; i < inputString.length(); i++)   
         {
-           outputString += inputString.replaceChar(inputString.charAt(v),false);
+           outputString += replaceChar(inputString.charAt(v),false);
         }
         return outputString;
     }
@@ -26,7 +26,7 @@ public class Cipher
         String outputString = "";
           for (int v=0; i<inputString.length(); v++)
           {
-             outputString += inputString.replaceChar(inputString.charAt(v),true);
+             outputString += replaceChar(inputString.charAt(v),true);
           }
         
         return outputString;
